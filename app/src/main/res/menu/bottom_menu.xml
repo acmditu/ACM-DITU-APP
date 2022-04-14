@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="Home"
+        android:icon="@drawable/ic_home"
+        app:showAsAction="always"
+        android:id="@+id/home_bottom"/>
+
+    <item android:title="Message"
+        android:icon="@drawable/ic_message"
+        app:showAsAction="always"
+        android:id="@+id/message_bottom"/>
+
+    <item android:title="Notifiactions"
+        android:icon="@drawable/ic_notifications"
+        app:showAsAction="always"
+        android:id="@+id/notifiactions_bottom"/>
+
+    <item android:title="Resources"
+        android:icon="@drawable/ic_resources"
+        app:showAsAction="always"
+        android:id="@+id/resources_bottom"/>
+
+    <item android:title="Settings"
+        android:icon="@drawable/ic_settings"
+        app:showAsAction="always"
+        android:id="@+id/settings_bottom"/>
+
+
+
+
+</menu>
