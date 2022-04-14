@@ -48,19 +48,19 @@
         android:textColorHint="#808080" />
 
     <EditText
+        android:id="@+id/email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/email"
         android:layout_below="@+id/name"
-        android:hint="Email"
-        android:textColor="@color/black"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="10dp"
-        android:background="@drawable/edit_round"
-        android:padding="15dp"
         android:layout_marginRight="30dp"
-        android:textColorHint="#808080"
-        android:inputType="textEmailAddress"/>
+        android:background="@drawable/edit_round"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="15dp"
+        android:textColor="@color/black"
+        android:textColorHint="#808080" />
 
     <EditText
         android:id="@+id/password"
@@ -93,16 +93,15 @@
         android:textColorHint="#808080" />
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/sign_up"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:id="@+id/sign_up"
         android:layout_below="@id/phone"
-        android:layout_marginTop="70dp"
-        android:background="@drawable/button_round"
         android:layout_marginLeft="30dp"
+        android:layout_marginTop="70dp"
         android:layout_marginRight="30dp"
-        android:text="JOIN US"
-        />
+        android:background="@drawable/button_round"
+        android:text="JOIN US" />
 
     <TextView
         android:layout_width="match_parent"
@@ -115,8 +114,8 @@
         android:textSize="15dp" />
 
     <com.google.android.material.textview.MaterialTextView
-        android:layout_width="match_parent"
         android:id="@+id/loginText"
+        android:layout_width="match_parent"
         android:layout_height="20dp"
         android:layout_below="@+id/sign_up"
         android:layout_marginLeft="280dp"
