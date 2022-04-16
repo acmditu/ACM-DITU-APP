@@ -7,4 +7,5 @@
     <string name="password">Password</string>
     <string name="login">login</string>
     <string name="backward"><![CDATA[<<]]></string>
+    <string name="splashscreen">splashScreen</string>
 </resources>
