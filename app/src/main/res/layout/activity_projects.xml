@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    tools:context=".Projects">
+
+    <TextView
+        android:id="@+id/project1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Access to Projects"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="60dp"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:src="@drawable/project1"
+        android:layout_below="@+id/project1"
+        android:layout_marginEnd="200dp"/>
+
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:src="@drawable/project2"
+        android:layout_below="@+id/project1"
+        android:layout_marginStart="200dp"/>
+
+    <TextView
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="220dp"
+        android:background="@drawable/roundstyle"
+        android:padding="10dp"
+        android:layout_marginTop="300dp"
+        android:layout_below="@+id/image2"
+        android:text=">>"
+        android:textColor="#87ceeb"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_below="@+id/image2"
+        android:background="@drawable/roundstyle"
+        android:text="@string/text"
+        android:layout_marginTop="300dp"
+        android:textColor="#87ceeb"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/button"
+        android:layout_marginLeft="70dp"
+        android:text="Do you have account already?"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:id="@+id/loginText"
+        android:layout_height="20dp"
+        android:layout_below="@+id/button1"
+        android:layout_marginLeft="265dp"
+        android:text="LOG IN"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+</RelativeLayout>

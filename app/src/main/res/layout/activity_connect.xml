@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    tools:context=".Connect">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="100dp"
+        android:shadowColor="#696969"
+        android:text="@string/stay_connected_with_members"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/tim"
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:src="@drawable/tim"
+        android:layout_below="@+id/text"
+        android:layout_marginEnd="200dp"
+        />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/minion"
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:src="@drawable/minion"
+        android:layout_below="@+id/text"
+        android:layout_marginStart="200dp"
+        />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sakshi"
+        android:layout_below="@+id/tim"
+        android:textSize="40sp"
+        android:paddingStart="30dp"
+        android:textColor="#000000"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/himanshu"
+        android:layout_below="@+id/minion"
+        android:layout_toEndOf="@+id/text1"
+        android:textSize="35dp"
+        android:paddingStart="100dp"
+        android:textColor="#000000"
+        android:textStyle="bold"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/mickey"
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:layout_below="@+id/text2"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="200dp"
+        android:src="@drawable/mickey" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/shinchan"
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:src="@drawable/shinchan"
+        android:layout_below="@+id/text2"
+        android:layout_marginLeft="200dp"
+        />
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shruti"
+        android:layout_below="@+id/mickey"
+        android:textSize="40dp"
+        android:paddingLeft="30dp"
+        android:textColor="#000000"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shreya"
+        android:layout_below="@+id/shinchan"
+        android:layout_toRightOf="@+id/text1"
+        android:textSize="35dp"
+        android:paddingLeft="100dp"
+        android:textColor="#000000"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text4"
+        android:layout_marginLeft="220dp"
+        android:background="@drawable/roundstyle"
+        android:padding="10dp"
+        android:layout_marginTop="50dp"
+        android:text=">>"
+        android:textColor="#87ceeb"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text4"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:background="@drawable/roundstyle"
+        android:text="@string/text"
+        android:textColor="#87ceeb"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/button"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="20dp"
+        android:text="Do you have account already?"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:id="@+id/loginText"
+        android:layout_height="20dp"
+        android:layout_below="@+id/button1"
+        android:layout_marginLeft="265dp"
+        android:layout_marginTop="20dp"
+        android:text="LOG IN"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+</RelativeLayout>
