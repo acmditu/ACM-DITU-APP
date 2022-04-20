@@ -1,14 +1,119 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background_gradient">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="90dp"
+        android:src="@drawable/jakeround" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="110dp"
+        android:fontFamily="@font/aclonica"
+        android:gravity="center"
+        android:text="Hey Jake"
+        android:textSize="30dp" />
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/LinearLayout"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="260dp"
+        android:background="@drawable/linearlayoutround"
+        android:orientation="vertical">
+
+
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/dark_mode_round"
+            android:drawableLeft="@drawable/darkmode"
+            android:drawablePadding="15dp"
+            android:lines="@integer/material_motion_duration_long_1"
+            android:padding="10dp"
+            android:text="Dark Mode"
+            android:textColor="@color/black"
+            android:thumb="@drawable/switch_thumb"
+            app:track="@drawable/switch_track" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/accounts"
+            android:drawableRight="@drawable/forwardicon"
+            android:drawablePadding="15dp"
+            android:padding="10dp"
+            android:text="Account"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/notification"
+            android:drawableRight="@drawable/forwardicon"
+            android:drawablePadding="15dp"
+            android:padding="10dp"
+            android:text="Notification"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/security"
+            android:drawableRight="@drawable/forwardicon"
+            android:drawablePadding="15dp"
+            android:padding="10dp"
+            android:text="Security and Privacy"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="About Us"
+            android:drawablePadding="15dp"
+            android:textColor="@color/black"
+            android:padding="10dp"
+            android:drawableLeft="@drawable/about"
+            />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/menu_drawer"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="320dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#50E8D2"
+        android:src="@drawable/storage" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Settings"
-        android:textSize="50sp"
-        tools:ignore="MissingConstraints" />
+        android:layout_marginBottom="40dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:text="Version 0.1.0"
+        android:textColor="#B3121010"
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        />
+
+
+
+
+</RelativeLayout>
