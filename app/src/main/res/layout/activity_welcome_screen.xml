@@ -8,7 +8,7 @@
     tools:context=".WelcomeScreen">
 
     <TextView
-        android:id="@+id/text"
+        android:id="@+id/Welcome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
@@ -24,7 +24,7 @@
 
 
     <TextView
-        android:id="@+id/text2"
+        android:id="@+id/getStarted"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/dit"
@@ -39,10 +39,11 @@
 
 
     <TextView
-        android:id="@+id/button"
+        android:id="@+id/forwardButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/text2"
+        android:layout_below="@+id/getStarted"
+        android:layout_centerHorizontal="true"
         android:layout_marginLeft="155dp"
         android:background="@drawable/roundstyle"
         android:gravity="center"
@@ -56,7 +57,7 @@
         android:id="@+id/logoACM"
         android:layout_width="match_parent"
         android:layout_height="123dp"
-        android:layout_below="@+id/text"
+        android:layout_below="@+id/Welcome"
         android:layout_alignParentEnd="true"
         android:layout_gravity="center"
         android:layout_marginTop="12dp"

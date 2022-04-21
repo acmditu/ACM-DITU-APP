@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DITUACM">
         <activity
+            android:name=".Project"
+            android:exported="false" />
+        <activity
             android:name=".Projects"
             android:exported="false" />
         <activity

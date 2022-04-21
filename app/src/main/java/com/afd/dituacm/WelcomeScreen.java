@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
 import android.view.View;
 import android.widget.TextView;
 
@@ -17,7 +16,7 @@ public class WelcomeScreen extends AppCompatActivity {
         getSupportActionBar().hide();
 
 
-        TextView myText = findViewById(R.id.button);
+        TextView myText = findViewById(R.id.forwardButton);
 
 
         myText.setOnClickListener(new View.OnClickListener() {
