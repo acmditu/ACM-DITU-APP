@@ -13,9 +13,6 @@
             android:name=".Project"
             android:exported="false" />
         <activity
-            android:name=".Projects"
-            android:exported="false" />
-        <activity
             android:name=".Connect"
             android:exported="false" />
         <activity
@@ -36,6 +33,10 @@
         <activity
             android:name=".LoginActivity"
             android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+
 
         <meta-data
             android:name="preloaded_fonts"
