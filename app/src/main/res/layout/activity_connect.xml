@@ -11,28 +11,29 @@
         android:id="@+id/StayConnected"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
         android:maxLines="1"
         android:shadowColor="#696969"
         android:text="@string/stay_connected_with_members"
         android:textAlignment="center"
         android:textColor="#000000"
-        android:textSize="50sp"
+        android:textSize="25sp"
         android:textStyle="bold" />
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/ChairPerson"
-        android:layout_width="175dp"
+        android:layout_width="150dp"
         android:layout_height="175dp"
+        android:layout_marginLeft="10dp"
         android:layout_below="@+id/StayConnected"
         android:layout_alignParentLeft="true"
         android:src="@drawable/tim" />
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/viceChairPerson"
-        android:layout_width="175dp"
+        android:layout_width="150dp"
+        android:layout_marginRight="10dp"
         android:layout_height="175dp"
         android:layout_below="@+id/StayConnected"
         android:layout_alignParentRight="true"
@@ -45,9 +46,10 @@
         android:layout_below="@+id/ChairPerson"
         android:layout_alignParentLeft="true"
         android:padding="10dp"
+        android:layout_marginLeft="15dp"
         android:text="Sakshi Negi"
         android:textColor="#000000"
-        android:textSize="30dp" />
+        android:textSize="25dp" />
 
     <TextView
         android:id="@+id/Himanshu"
@@ -58,25 +60,26 @@
         android:padding="10dp"
         android:text="Himanshu Arora"
         android:textColor="#000000"
-        android:textSize="30dp" />
+        android:textSize="25dp" />
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/Secretary"
-        android:layout_width="175dp"
+        android:layout_width="150dp"
         android:layout_height="175dp"
+        android:layout_marginLeft="10dp"
         android:layout_below="@+id/Himanshu"
         android:layout_alignParentLeft="true"
-        android:layout_marginTop="3dp"
-        android:layout_marginRight="200dp"
+        android:layout_marginTop="20dp"
         android:src="@drawable/mickey" />
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/Treasurer"
-        android:layout_width="175dp"
+        android:layout_width="150dp"
+        android:layout_marginTop="20dp"
         android:layout_height="175dp"
         android:layout_below="@+id/Himanshu"
         android:layout_alignParentRight="true"
-        android:layout_marginLeft="200dp"
+        android:layout_marginRight="10dp"
         android:src="@drawable/shinchan" />
 
     <TextView
@@ -86,8 +89,9 @@
         android:layout_below="@+id/Secretary"
         android:padding="10dp"
         android:text="Shruti Bisht"
+        android:layout_marginLeft="10dp"
         android:textColor="#000000"
-        android:textSize="30dp" />
+        android:textSize="25dp" />
 
     <TextView
         android:id="@+id/Shreya"
@@ -97,8 +101,9 @@
         android:layout_alignParentRight="true"
         android:padding="10dp"
         android:text="Shreya Joshi"
+        android:layout_marginRight="10dp"
         android:textColor="#000000"
-        android:textSize="30dp" />
+        android:textSize="25dp" />
 
     <TextView
         android:id="@+id/forwardbutton"
@@ -106,6 +111,7 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/loginText"
         android:layout_marginLeft="220dp"
+        android:layout_marginBottom="40dp"
         android:background="@drawable/roundstyle"
         android:padding="10dp"
         android:text=">>"
@@ -121,6 +127,7 @@
         android:layout_marginLeft="120dp"
         android:background="@drawable/roundstyle"
         android:gravity="bottom"
+        android:layout_marginBottom="40dp"
         android:padding="10dp"
         android:text="@string/text"
         android:textColor="#87ceeb"
@@ -133,8 +140,8 @@
         android:layout_height="20dp"
         android:layout_alignParentBottom="true"
         android:layout_marginLeft="70dp"
-        android:layout_marginTop="20dp"
-        android:text="Do you have account already?"
+        android:layout_marginBottom="20dp"
+        android:text="Do you have account already?  "
         android:textColor="@color/black"
         android:textSize="15dp" />
 
@@ -143,8 +150,8 @@
         android:layout_width="match_parent"
         android:layout_height="20dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginLeft="265dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginLeft="270dp"
+        android:layout_marginBottom="20dp"
         android:text="LOG IN"
         android:textColor="@color/black"
         android:textSize="15dp" />

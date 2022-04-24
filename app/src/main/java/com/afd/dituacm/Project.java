@@ -24,6 +24,7 @@ public class Project extends AppCompatActivity {
                 Intent i=new Intent(Project.this,SignupActivity.class);
                 //0i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 startActivity(i);
+                finish();
             }
         });
         myText1.setOnClickListener(new View.OnClickListener() {
@@ -38,6 +39,7 @@ public class Project extends AppCompatActivity {
             public void onClick(View view) {
                 Intent i=new Intent(Project.this,LoginActivity.class);
                 startActivity(i);
+                finish();
             }
         });
     }
