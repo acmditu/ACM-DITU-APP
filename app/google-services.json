@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "884160098601",
+    "project_id": "acm-app-80122",
+    "storage_bucket": "acm-app-80122.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:884160098601:android:91055fbd8b5c9f18810738",
+        "android_client_info": {
+          "package_name": "com.afd.dituacm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "884160098601-dlenmmhpfjih94bso41l6og355dps0cd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.afd.dituacm",
+            "certificate_hash": "4ec909959b4e747bc8f6090192bb01f9456190ad"
+          }
+        },
+        {
+          "client_id": "884160098601-12js1npb9j4tb8rni25v52ru8fln0fkj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpxSP9YvB3zKSG8jnm1mIBOZW7YGxF0u0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "884160098601-12js1npb9j4tb8rni25v52ru8fln0fkj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -9,9 +9,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DITUACM">
-
         <activity
-            android:name=".SignupActivity"
+            android:name=".Project"
+            android:exported="false" />
+        <activity
+            android:name=".Projects"
+            android:exported="false" />
+        <activity
+            android:name=".Connect"
+            android:exported="false" />
+        <activity
+            android:name=".WelcomeScreen"
+            android:exported="false" />
+        <activity
+            android:name=".Splashscreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,12 +31,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".LoginActivity"
-            android:exported="true">
-
-        </activity>
+            android:name=".SignupActivity"
+            android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".LoginActivity"
             android:exported="true" />
 
         <meta-data

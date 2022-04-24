@@ -7,4 +7,9 @@
     <string name="password">Password</string>
     <string name="login">login</string>
     <string name="backward"><![CDATA[<<]]></string>
+    <string name="splashscreen">splashScreen</string>
+    <string name="text"><![CDATA[<<]]></string>
+    <string name="stay_connected_with_members">Stay Connected with Members</string>
+    <string name="sakshi">Sakshi</string>
+    <string name="himanshu">Himanshu</string>
 </resources>
