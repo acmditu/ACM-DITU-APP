@@ -39,6 +39,7 @@ public class Connect extends AppCompatActivity {
             public void onClick(View view) {
                 Intent i=new Intent(Connect.this,LoginActivity.class);
                 startActivity(i);
+                finish();
             }
         });
     }
