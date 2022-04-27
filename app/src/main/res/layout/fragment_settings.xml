@@ -1,17 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@drawable/background_gradient">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background_gradient"
+    android:id="@+id/drawerlayout"
+    android:fitsSystemWindows="false"
+    tools:openDrawer="start"
+    >
 
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/navigationview"
+        app:headerLayout="@layout/headerfile"
+        android:fitsSystemWindows="true"
+        app:menu="@menu/sidemenu"
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
 
+        android:layout_gravity="start"
+        />
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
     <de.hdodenhof.circleimageview.CircleImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginStart="19dp"
         android:layout_marginTop="90dp"
         android:src="@drawable/jakeround" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+        app:title="Settings"
+        app:titleTextColor="@color/white" />
+
+
 
     <TextView
         android:layout_width="150dp"
@@ -93,14 +125,6 @@
             />
     </LinearLayout>
 
-    <ImageButton
-        android:id="@+id/menu_drawer"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginLeft="320dp"
-        android:layout_marginTop="30dp"
-        android:backgroundTint="#50E8D2"
-        android:src="@drawable/storage" />
 
     <TextView
         android:layout_width="match_parent"
@@ -112,8 +136,9 @@
         android:textColor="#B3121010"
 
         />
-
-
-
-
 </RelativeLayout>
+
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -12,4 +12,6 @@
     <string name="stay_connected_with_members">Stay Connected with Members</string>
     <string name="sakshi">Sakshi</string>
     <string name="himanshu">Himanshu</string>
+    <string name="navigation_open">Open Navigation Drawer</string>
+    <string name="navigation_close">Close Navigation Drawer</string>
 </resources>

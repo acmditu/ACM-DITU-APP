@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/calender"
+            android:icon="@drawable/calender"
+            android:title="Calender"/>
+
+        <item
+            android:id="@+id/Resource"
+            android:icon="@drawable/resources"
+            android:title="Resources"/>
+        <item
+            android:id="@+id/AboutUs"
+            android:icon="@drawable/about_us"
+            android:title="About Us"/>
+        <item
+            android:id="@+id/Messages"
+            android:icon="@drawable/messsage"
+            android:title="Messages"/>
+
+        <item
+            android:id="@+id/Members"
+            android:icon="@drawable/members"
+            android:title="Member"/>
+
+        <item
+            android:id="@+id/information"
+            android:icon="@drawable/information"
+            android:title="Information"/>
+
+        <item
+            android:id="@+id/feedback"
+            android:icon="@drawable/feedback"
+            android:title="Feedback"/>
+    </group>
+
+   <item
+       android:title="Others">
+
+       <menu>
+
+           <item
+               android:id="@+id/share"
+               android:icon="@drawable/share"
+               android:title="Share"/>
+
+           <item
+               android:id="@+id/logout"
+               android:icon="@drawable/logout"
+               android:title="LOG OUT"/>
+
+
+       </menu>
+
+
+   </item>
+
+
+
+</menu>
