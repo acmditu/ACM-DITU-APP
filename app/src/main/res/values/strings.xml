@@ -7,4 +7,6 @@
     <string name="password">Password</string>
     <string name="login">login</string>
     <string name="backward"><![CDATA[<<]]></string>
+    <string name="navigation_open">Open Navigation Drawer</string>
+    <string name="navigation_close">Close Navigation Drawer</string>
 </resources>
