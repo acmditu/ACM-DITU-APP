@@ -7,6 +7,7 @@ import androidx.appcompat.widget.AppCompatButton;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -30,6 +31,7 @@ import org.w3c.dom.Text;
 
 public class SignupActivity extends AppCompatActivity {
 
+
     EditText nameEt,emailEt,passEt,mobEt;
     Button BtnJoin;
     private FirebaseAuth mAuth;
@@ -43,7 +45,11 @@ public class SignupActivity extends AppCompatActivity {
         setContentView(R.layout.activity_signup);
 
         getSupportActionBar().hide();
+        SharedPreferences sh=getSharedPreferences("welcomePages",0);
+        SharedPreferences.Editor e=sh.edit();
 
+        e.putBoolean("hasSeen",true);
+        e.apply();
         progressDialog = new ProgressDialog(this);
         progressDialog.setMessage("Please Wait....");
         progressDialog.setCancelable(false);

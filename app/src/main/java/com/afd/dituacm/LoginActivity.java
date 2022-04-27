@@ -6,6 +6,7 @@ import androidx.appcompat.widget.AppCompatButton;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
@@ -23,6 +24,8 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class LoginActivity extends AppCompatActivity {
 
+    public static String Name="MyName";
+
     EditText etMail,etPass;
     Button login;
     FirebaseAuth mAuth;
@@ -35,6 +38,12 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         getSupportActionBar().hide();
+
+        SharedPreferences sh=getSharedPreferences("welcomePages",0);
+        SharedPreferences.Editor e=sh.edit();
+
+        e.putBoolean("hasSeen",true);
+        e.apply();
 
         progressDialog = new ProgressDialog(this);
         progressDialog.setMessage("Please Wait....");
@@ -59,6 +68,8 @@ public class LoginActivity extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+
 
                 progressDialog.show();
                 String email = etMail.getText().toString().trim();
