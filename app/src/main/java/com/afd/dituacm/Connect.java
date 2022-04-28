@@ -25,6 +25,7 @@ public class Connect extends AppCompatActivity {
             public void onClick(View view) {
                 Intent i=new Intent(Connect.this,Project.class);
                 startActivity(i);
+                finish();
             }
         });
         myText1.setOnClickListener(new View.OnClickListener() {

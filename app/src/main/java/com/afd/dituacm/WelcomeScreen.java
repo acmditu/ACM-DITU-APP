@@ -24,6 +24,7 @@ public class WelcomeScreen extends AppCompatActivity {
             public void onClick(View view) {
                 Intent i=new Intent(WelcomeScreen.this,Connect.class);
                 startActivity(i);
+                finish();
             }
         });
     }
